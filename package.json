@@ -1,0 +1,24 @@
+{
+  "name": "easybanking",
+  "version": "1.0.0",
+  "description": "Commercial website for easy banking",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joel-nambala/easybanking.git"
+  },
+  "author": "Joel Nambala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joel-nambala/easybanking/issues"
+  },
+  "homepage": "https://github.com/joel-nambala/easybanking#readme",
+  "devDependencies": {
+    "concat": "^1.0.3",
+    "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
