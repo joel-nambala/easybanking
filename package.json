@@ -4,7 +4,10 @@
   "description": "Commercial website for easy banking",
   "main": "index.js",
   "scripts": {
-    "start": "live-server"
+    "start": "live-server",
+    "concat": "concat -o css/style.concat.css css/style.css css/queries.css css/utilities.css",
+    "compress": "node-sass css/style.concat.css css/style.min.css --output-style compressed",
+    "build": "npm-run-all concat compress"
   },
   "repository": {
     "type": "git",

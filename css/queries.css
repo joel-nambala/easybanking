@@ -21,6 +21,74 @@
     overflow: hidden;
     transition: all 0.6s ease;
   }
+
+  .about__paragraph {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero__photo {
+    width: 40rem;
+  }
+
+  .copyright {
+    align-items: flex-start;
+  }
+
+  .copyright button {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .grid-2 {
+    display: block;
+  }
+
+  .hero__photo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 55%;
+  }
+
+  .hero__heading {
+    font-size: 4rem;
+  }
+
+  .about__heading {
+    font-size: 3.2rem;
+  }
+
+  .about__paragraph {
+    font-size: 1.8rem;
+  }
+
+  .hero__paragraph {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .hero__heading {
+    font-size: 3.6rem;
+  }
+
+  .about__heading {
+    font-size: 2.8rem;
+  }
+
+  .about__paragraph {
+    font-size: 1.6rem;
+  }
 }
 
 @media only screen and (min-width: 750px) {

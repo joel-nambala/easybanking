@@ -84,6 +84,10 @@ scrollLinks.forEach(function (link, i) {
     const id = e.currentTarget.getAttribute('href').slice(1);
     const element = document.getElementById(id);
 
+    if (element === null) {
+      alert('The element is yet to be added');
+    }
+
     // 3. Calculate the heights
     const navigationHeight = navigation.getBoundingClientRect().height;
     const containerHeight = listContainer.getBoundingClientRect().height;
