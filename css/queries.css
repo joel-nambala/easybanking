@@ -46,6 +46,10 @@
     display: block;
   }
 
+  .hero {
+    width: 100%;
+  }
+
   .hero__photo {
     display: none;
   }
