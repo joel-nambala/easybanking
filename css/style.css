@@ -27,6 +27,7 @@ html {
 
 body {
   font-family: "Public Sans", sans-serif;
+  position: relative;
 }
 
 /* HEADER */
@@ -234,4 +235,74 @@ body {
 
 .copyright__text {
   font-size: 1.6rem;
+}
+
+.invite {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  backdrop-filter: blur(6px) brightness(60%);
+  transition: all 0.8s ease 0.2s;
+}
+
+.invite__content {
+  width: 75%;
+  background-color: var(--Light-Grayish-Blue);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+  padding: 2rem;
+}
+
+.invite__heading {
+  font-size: 2.8rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.invite__content label {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.invite__content input {
+  border: none;
+  background-color: var(--Light-Grayish-Blue);
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  border-bottom: 2px solid var(--Lime-Green);
+  padding: 1rem 2rem;
+  width: 50%;
+}
+
+.invite__content input:focus {
+  outline: none;
+}
+
+.invite__content button {
+  margin-bottom: 3rem;
+}
+
+.invite__close {
+  position: absolute;
+  right: 3rem;
+  top: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.invite__close:hover {
+  color: var(--Lime-Green);
 }

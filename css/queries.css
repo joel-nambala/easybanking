@@ -25,6 +25,10 @@
   .about__paragraph {
     width: 100%;
   }
+
+  .invite__content input {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1000px) {

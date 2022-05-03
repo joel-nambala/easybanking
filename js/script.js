@@ -1,5 +1,11 @@
 'use strict';
 
+/////////////////////////////////////////////////
+// Generic function
+const hideListContainer = function () {
+  listContainer.style.height = 0;
+};
+
 ////////////////////////////////////////////////
 // Copyright year
 const copyrightYear = document.querySelector('.copy__year');
@@ -85,7 +91,8 @@ scrollLinks.forEach(function (link, i) {
     const element = document.getElementById(id);
 
     if (element === null) {
-      alert('The element is yet to be added');
+      alert('The section is yet to be added');
+      hideListContainer();
     }
 
     // 3. Calculate the heights
@@ -108,6 +115,25 @@ scrollLinks.forEach(function (link, i) {
     });
 
     // 7. Hide the navigation on smaller screens
-    listContainer.style.height = 0;
+    hideListContainer();
   });
+});
+
+/////////////////////////////////////////
+// Modal
+const btnInvite = document.querySelectorAll('.btn-invite');
+const inviteModal = document.querySelector('.invite');
+const inviteClose = document.querySelector('.invite__close');
+
+btnInvite.forEach(function (btn, i) {
+  btn.addEventListener('click', function () {
+    // Remove the popup class
+    inviteModal.classList.remove('popup');
+    hideListContainer();
+  });
+});
+
+inviteClose.addEventListener('click', function () {
+  // Add the popup class
+  inviteModal.classList.add('popup');
 });

@@ -6,7 +6,8 @@
   padding: 2rem 1.5rem;
 }
 
-.btn-invite {
+.btn-invite,
+.btn-send {
   border: none;
   font-size: 1.6rem;
   text-transform: capitalize;
@@ -44,4 +45,9 @@
   background-color: var(--Very-Light-Gray);
   z-index: 99;
   box-shadow: 0 0.3rem 2rem var(--Grayish-Blue);
+}
+
+.popup {
+  opacity: 0;
+  visibility: hidden;
 }
